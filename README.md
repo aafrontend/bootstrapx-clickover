@@ -1,5 +1,5 @@
 Bootstrapx Clickover
-=================
+====================
 
 bootstrapx clickover provides enhancements to [Twitter Bootstrap Popovers](http://twitter.github.com/bootstrap#popover) to allow popovers to be opened/closed with click events and some other niceities
 
