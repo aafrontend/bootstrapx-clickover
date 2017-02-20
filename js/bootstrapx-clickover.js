@@ -1,5 +1,7 @@
 /* ==========================================================
  * bootstrapx-clickover.js
+ * come from https://github.com/flashcloud/bootstrapx-clickover
+ * fork from https://github.com/Wolfr/bootstrapx-clickover
  * Based on https://github.com/lecar-red/bootstrapx-clickover
  * version: 1.1
  * Tested with Bootstrap 3.1.1
