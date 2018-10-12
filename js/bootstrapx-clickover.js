@@ -1,5 +1,7 @@
 /* ==========================================================
  * bootstrapx-clickover.js
+ * come from https://github.com/flashcloud/bootstrapx-clickover
+ * fork from https://github.com/Wolfr/bootstrapx-clickover
  * Based on https://github.com/lecar-red/bootstrapx-clickover
  * version: 1.1
  * Tested with Bootstrap 3.1.1
@@ -193,6 +195,12 @@
       var $this = $(this)
         , data = $this.data('clickover')
         , options = typeof option == 'object' && option
+
+      //Added support for width and height in element data of properties
+      var width = $this.data('dlgWidth');
+      if (!(width === null || width === undefined)) options = $.extend(true, {width: width}, options);
+      var height = $this.data('dlgHeight');
+      if (!(height === null || height === undefined)) options = $.extend(true, {height: height}, options);
 
       if (!data) $this.data('clickover', (data = new Clickover(this, options)))
       if (typeof option == 'string') data[option]()
